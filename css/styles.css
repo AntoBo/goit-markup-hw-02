@@ -85,9 +85,11 @@ body {
 .section .h2 {
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 }
 
-.features .h3 {
+.section.features .h3 {
+  font-size: 14px; /*не могу понять почему этот класс не наследует 14 шрифт от body. приходится указывать здесь */
   text-transform: uppercase;
   line-height: 1.14;
 }
