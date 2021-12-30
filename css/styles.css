@@ -1,2 +1,62 @@
-body{
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-accent: #2196f3;
+
+  --text-color-header: #212121;
+  --text-color-main: #757575;
+  --text-color-white-transparent: rgba(255, 255, 255, 0.6);
+
+  --button-bg-color: #f5f4fa;
 }
+
+body {
+  background-color: var(--color-white);
+  color: var(--text-color-paragraph);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.71;
+}
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  color: var(--color-black);
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-accent {
+  color: var(--color-accent);
+}
+
+/* Site nav */
+
+.nav .link {
+  color: var(--text-color-header);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav.contacts .link {
+  color: var(--text-color-main);
+}
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--color-accent);
+}
+
+.nav .link.current {
+  color: var(--color-accent);
+}
+
+/* Header contacts */
