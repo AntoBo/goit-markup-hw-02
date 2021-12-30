@@ -7,12 +7,13 @@
   --text-color-main: #757575;
   --text-color-white-transparent: rgba(255, 255, 255, 0.6);
 
-  --button-bg-color: #f5f4fa;
+  --bg-color-dark: #2f303a;
+  --bg-color-inactive: #f5f4fa;
 }
 
 body {
   background-color: var(--color-white);
-  color: var(--text-color-paragraph);
+  color: var(--text-color-main);
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -60,3 +61,45 @@ body {
 }
 
 /* Hero */
+.hero-section {
+  background-color: var(--bg-color-dark);
+}
+
+.hero-h1 {
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Sections */
+
+.section .h2,
+.section .h3 {
+  color: var(--text-color-header);
+  font-weight: 700;
+}
+.section .h2 {
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+.features .h3 {
+  text-transform: uppercase;
+  line-height: 1.14;
+}
+
+.section.our-team .h3,
+.section.our-team .p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.section.our-team .h3 {
+  font-weight: 500;
+}
+
+/* Buttons */
