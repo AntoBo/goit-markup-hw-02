@@ -3,7 +3,7 @@
   --color-black: #000000;
   --color-accent: #2196f3;
 
-  --text-color-header: #212121;
+  --text-color-title: #212121;
   --text-color-main: #757575;
   --text-color-white-transparent: rgba(255, 255, 255, 0.6);
 
@@ -42,7 +42,7 @@ body {
 /* Site nav */
 
 .nav .link {
-  color: var(--text-color-header);
+  color: var(--text-color-title);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -79,7 +79,7 @@ body {
 
 .section .h2,
 .section .h3 {
-  color: var(--text-color-header);
+  color: var(--text-color-title);
   font-weight: 700;
 }
 .section .h2 {
@@ -94,7 +94,7 @@ body {
   line-height: 1.14;
 }
 
-.section.our-team{
+.section.our-team {
   background-color: var(--bg-color-inactive);
 }
 
@@ -109,17 +109,34 @@ body {
 }
 
 /* Buttons */
+
+.button{
+  color:var(--text-color-title);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: var(--bg-color-inactive);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.hero-section .button {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
 /*Footer*/
-.footer{
+.footer {
   background-color: var(--bg-color-dark);
 }
 
-.footer .link{
+.footer .link {
   color: var(--text-color-white-transparent);
   font-style: normal;
 }
 
-.footer .link.map{
+.footer .link.map {
   color: var(--color-white);
 }
 
@@ -128,3 +145,18 @@ body {
   color: var(--color-accent);
 }
 
+/* Portfolio */
+
+.section.portfolio .title {
+  color: var(--text-color-title);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section.portfolio .type {
+  color: var(--text-color-main);
+  font-size: 16px;
+  line-height: 1.88;
+}
