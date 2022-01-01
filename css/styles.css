@@ -89,9 +89,13 @@ body {
 }
 
 .section.features .h3 {
-  font-size: 14px; /*не могу понять почему этот класс не наследует 14 шрифт от body. приходится указывать здесь */
+  font-size: inherit; /*не могу понять почему этот класс не наследует 14 шрифт от body. приходится указывать inherit */
   text-transform: uppercase;
   line-height: 1.14;
+}
+
+.section.our-team{
+  background-color: var(--bg-color-inactive);
 }
 
 .section.our-team .h3,
@@ -105,3 +109,22 @@ body {
 }
 
 /* Buttons */
+/*Footer*/
+.footer{
+  background-color: var(--bg-color-dark);
+}
+
+.footer .link{
+  color: var(--text-color-white-transparent);
+  font-style: normal;
+}
+
+.footer .link.map{
+  color: var(--color-white);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--color-accent);
+}
+
