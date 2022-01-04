@@ -93,10 +93,6 @@ body {
   line-height: 1.14;
 }
 
-.feature-description {
-  /*all inherited from body*/
-}
-
 .section.team {
   background-color: var(--bg-color-inactive);
 }
