@@ -35,6 +35,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
+
 .logo-accent {
   color: var(--color-accent);
 }
@@ -77,41 +78,46 @@ body {
 
 /* Sections */
 
-.section .h2,
-.section .h3 {
+.section-title {
   color: var(--text-color-title);
   font-weight: 700;
-}
-.section .h2 {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-.section.features .h3 {
+.feature-title {
+  color: var(--text-color-title);
   font-size: inherit; /*не могу понять почему этот класс не наследует 14 шрифт от body. приходится указывать inherit */
   text-transform: uppercase;
   line-height: 1.14;
 }
 
-.section.our-team {
+.feature-description {
+  /*all inherited from body*/
+}
+
+.section.team {
   background-color: var(--bg-color-inactive);
 }
 
-.section.our-team .h3,
-.section.our-team .p {
+.team-member-title {
+  color: var(--text-color-title);
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
-
-.section.our-team .h3 {
-  font-weight: 500;
+.team-member-description {
+  color: var(--text-color-main);
+  font-size: 16px;
+  line-height: 1.19;  
 }
 
 /* Buttons */
 
-.button{
-  color:var(--text-color-title);
+.button {
+  color: var(--text-color-title);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -136,6 +142,10 @@ body {
   font-style: normal;
 }
 
+.footer .logo {
+  color: var(--color-white);
+}
+
 .footer .link.map {
   color: var(--color-white);
 }
@@ -147,7 +157,7 @@ body {
 
 /* Portfolio */
 
-.section.portfolio .title {
+.portfolio-title {
   color: var(--text-color-title);
   font-weight: 700;
   font-size: 18px;
@@ -155,8 +165,8 @@ body {
   letter-spacing: 0.06em;
 }
 
-.section.portfolio .type {
+.portfolio-type {
   color: var(--text-color-main);
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
 }
