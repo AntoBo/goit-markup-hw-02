@@ -88,7 +88,7 @@ body {
 
 .feature-title {
   color: var(--text-color-title);
-  font-size: inherit; /*не могу понять почему этот класс не наследует 14 шрифт от body. приходится указывать inherit */
+  font-size: 14px; 
   text-transform: uppercase;
   line-height: 1.14;
 }
